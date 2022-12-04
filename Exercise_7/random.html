@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="./random.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="./random.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+          <input id="text-content" class="generate" type="text" name="generate" readonly>
+          <div class="content">
+            <span >Passwrod length</span>
+            <input type="number" name="" id="total-char">
+          </div>
+          <div class="content">
+            <span>Uppercase</span>
+            <input type="checkbox" name="" id="upper-case" checked>
+          </div>
+          <div class="content">
+            <span>Lowercase</span>
+            <input type="checkbox" name="" id="lower-case" checked>
+          </div>
+          <div class="content">
+            <span>Number</span>
+            <input type="checkbox" name="" id="numbers" checked>
+          </div>
+          <div class="content">
+            <span>Symbol</span>
+            <input type="checkbox" name="" id="symbols"  checked>
+          </div>
+          <button id="strBtn"  type="submit" style="background-color:green ;">Strong Password</button>
+          <button id="danBtn"  type="submit" style="background-color:red ;">Danger Password</button>
+          <button id="weakBtn" type="submit" style="background-color:rgb(182, 182, 111) ;">Funny Password</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+   margin: 0;
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+   background-color: yellow;
+   height: 100vh;
+
+}
+
+.feedback-container{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position: relative;
+}
+.emohi-container{
+    border: 2px solid red;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    border-radius: 55%;
+    width: 50px;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    overflow: hidden;
+    /* display: none; */
+
+}
+.far{
+    /* margin:1px; */
+    transform: translateX(-0%);
+    padding: 1.5px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.rating-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+
+}
+.fa-star{
+    color: lightgray;
+    cursor: pointer;
+
+}
+.fa-star.active{
+    color: gold;
+}

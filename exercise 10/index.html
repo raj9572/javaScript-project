@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app</title>
+    <script src="./script.js" defer></script>
+    <style>
+        .container{
+            display: grid;
+            place-items:center;
+            max-width: 900px;
+            width: 100%;
+            margin: 10px auto;
+        }
+        .container #titlec, .container #descc{
+            width: 100%;
+            padding: 5px;
+            outline: none;
+            /* border: none; */
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .btn{
+            padding: 8px;
+            font-size: 18px;
+            color: white;
+            background-color: #232323;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .form-todo{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <h1>To Do app</h1>
+        <div class="box">
+            <div  class="form-todo">
+                <input id="titlec" value="" type="text" >
+                <input id="descc"value="" type="text" >
+                <button id="submit" class="btn btn-primary">Submit</button>
+                <button id="deleted" class="btn btn primary">delete</button>
+            </div>
+            <!-- <div id="todo">
+
+            </div> -->
+        </div>
+     </div>
+</body>
+</html>
